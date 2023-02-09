@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css"/>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic-bootstrap.min.css"/>
+
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <title>Weather Dashboard</title>
+
+</head>
+
+<body>
+
+    <header> 
+
+        <h1 class="text-center">Weather Dashboard</h1>
+        
+    </header>
+
+    <section>
+
+            <section class="row">
+
+                <section class="col-md-2">
+
+                    <h5>Search for any city in the world:</h5>
+
+                    <form class="form-inline" id="search-form">
+
+                        <input type="search" class="form-control mb-3 ds-input" id="cityname" placeholder="Search for any city here">
+
+                        <button type="submit" class="btn btn-primary mb-3"><span class="oi oi-magnifying-glass"></span></button>
+                        
+                    </form>
+
+                    <ul class="list-group" id="searchprevious"></ul>
+
+                </section>
+
+                <section class="col-md-8">
+
+                    <section class="card mt-3">
+
+                        <section class="card-body">
+
+                            <section class="d-flex flex-row ">
+
+                                <h2 class="card-title align-self-center" id="city-name"></h2> 
+
+                            </section>
+
+                            <p id="city-temperature">Temperature: </p>
+
+                            <p id="city-humidity">Humidity: </p>
+
+                            <p id="city-windspeed">Wind Speed: </p>
+
+                        </section>
+
+                    </section>
+
+                    <section>
+
+                        <h2>Forecast for the next 5 days:</h2>
+
+                        <section class="row justify-content-between" id="fd">
+
+                        </section>
+
+                    </section>
+
+                </section>
+
+        </section>
+
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.10.3/dayjs.min.js"></script>
+
+    <script src="./assets/script.js"></script>
+
+</body>
+
+</html>
